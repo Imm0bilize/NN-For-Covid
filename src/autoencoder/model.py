@@ -72,7 +72,7 @@ class Decoder(nn.Module):
         x = self.t_conv_1(x)
         x = self.t_conv_2(x)
         x = self.t_conv_3(x)
-        return F.sigmoid(x)
+        return torch.sigmoid(x)
 
 
 class AutoEncoder(nn.Module):
